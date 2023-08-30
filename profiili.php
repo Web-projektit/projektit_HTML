@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="fi-FI">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Profiilisivu</title>
+<?php include "header.php"; ?>
+<title>Profiilisivu</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
+    
     header {
       background-color: #50b3a2;
       color: white;
@@ -51,11 +44,7 @@
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Profiilisivu</h1>
-  </header>
-
+  <?php include "navbar.php"; ?>      
   <div class="container">
 
     <!-- Kuva ja perustiedot -->
@@ -87,7 +76,7 @@
       </ul>
     </div>
 
-  </div>
+</div>
 <?php include "footer.html"; ?>
 </body>
 </html>

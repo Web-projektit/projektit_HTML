@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="site.css">
+  <title>Bootstrap Breakpoints Responsive Image Gallery with Captions</title>
+  <style>
+    /* Container for the gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: space-around;*/
+    }
+
+    /* Individual image containers, optimized for mobile */
+    .gallery-item {
+      /* flex: 1; */
+      flex: 0 0;
+      min-width: 100%;
+      /* gap: 10px; */
+      /* margin: 10px; */
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    /* Responsive image styling */
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Media queries for larger screens using Bootstrap breakpoints */
+    @media (min-width: 576px) {
+      .gallery-item {
+        min-width: 50%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .gallery-item {
+        min-width: 33.333%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .gallery-item {
+        min-width: 25%;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .gallery-item {
+        min-width:20%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> 
+  <div class="gallery">
+    <div class="gallery-item">
+      <figure>
+        <img src="placeholder200.png" alt="Placeholder Image 1">
+        <figcaption>Image Caption 1</figcaption>
+      </figure>
+    </div>
+    <div class="gallery-item">
+      <figure>
+        <img src="placeholder200.png" alt="Placeholder Image 2">
+        <figcaption>Image Caption 2</figcaption>
+      </figure>
+    </div>
+    <div class="gallery-item">
+      <figure>
+        <img src="placeholder200.png" alt="Placeholder Image 3">
+        <figcaption>Image Caption 3</figcaption>
+      </figure>
+    </div>
+    <div class="gallery-item">
+      <figure>
+        <img src="placeholder200.png" alt="Placeholder Image 4">
+        <figcaption>Image Caption 4</figcaption>
+      </figure>
+    </div>
+    <div class="gallery-item">
+      <figure>
+        <img src="placeholder200.png" alt="Placeholder Image 5">
+        <figcaption>Image Caption 5</figcaption>
+      </figure>
+    </div>
+    <div class="gallery-item">
+      <figure>
+        <img src="placeholder200.png" alt="Placeholder Image 6">
+        <figcaption>Image Caption 6</figcaption>
+      </figure>
+    </div>
+    <div class="gallery-item">
+        <figure>
+          <img src="placeholder200.png" alt="Placeholder Image 6">
+          <figcaption>Image Caption 7</figcaption>
+        </figure>
+      </div>
+  </div>
+ </div>
+<?php include "footer.html"; ?>
+</body>
+</html>

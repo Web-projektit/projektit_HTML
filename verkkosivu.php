@@ -4,19 +4,13 @@
 <?php include "header.php"; ?>
   <title>Aurinkokunta</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      margin: 20px;
-    }
     .image {
       max-width: 300px;
     }
   </style>
 </head>
 <body>
-
+  <?php include "navbar.php"; ?>      
   <div class="container">
     <h1>Aurinkokunta</h1>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Milky_Way_Arms_ssc2008-10.svg/465px-Milky_Way_Arms_ssc2008-10.svg.png" alt="Aurinkokunta" class="image">

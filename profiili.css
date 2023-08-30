@@ -1,0 +1,23 @@
+.profile-image {
+    max-width: 150px;
+    margin: 20px 0;
+  }
+
+  .info-section {
+    margin: 20px 0;
+  }
+
+  .info-title {
+    font-weight: bold;
+  }
+
+  .hobbies-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .hobbies-list li {
+    background-color: #e2e2e2;
+    margin: 5px 0;
+    padding: 10px;
+  }

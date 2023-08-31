@@ -1,64 +1,83 @@
 .brand-logo {
-    max-width: 50px;
-    padding: 0;
-    margin: 0 10px;
-  }
-  
-  .brand-logo img {
-    max-height: 43px;
-    object-fit: contain;
-  }
-  
-  nav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  nav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  nav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  nav a:not(:first-child) {display: none;}
+  max-width: 50px;
+  padding: 0;
+  margin: 0 10px;
+}
 
-  nav a.icon {
-      float: right;
-      display: block;
-    }
-  
-  nav.responsive {position: relative;}
+.brand-logo img {
+  max-height: 43px;
+  object-fit: contain;
+}
 
-  nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-      background-color: #ddd;
-    }
+nav {
+  overflow: hidden;
+  background-color: #333;
+  color:#fff;
+  display:flex;
+  flex-direction: column;
+  position: relative;
+}
 
-  nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+nav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Piilotetaan kaikki linkit paitsi ensimmäinen */
+nav a:not(:first-child) {display: none;}
+
+nav .icon {
+  position: absolute;
+  right: 0;
+  font-size: 24px; 
+  cursor: pointer; 
+  padding: 10px;
+}
   
-  @media screen and (min-width:767px) {
-  nav a:not(:first-child) {display: block; float:left;}    
-  nav a:first-child {float:left;}    
-  nav a.icon {display: none;}
-  /* nav .nav-suojaus {float:right;} */
-  }
-  
+nav .close {
+  display: none;
+}
+
+#toggle-btn {
+  position: absolute;
+  visibility: hidden;
+}  
+
+/* Näytetään pystypalkki, näyttötila on tallennettu checkboxiin */
+#toggle-btn:checked ~ a {
+  display: inline;
+  text-align: left;
+}
+
+/* Pystypalkin pohjalle tyhjää */
+#toggle-btn:checked ~ a:last-child {
+  padding-bottom: 16px;
+}
+
+/* Huom. labelin oletus-display on inline, myös block toimisi */
+#toggle-btn:checked ~ .close {
+  display: inline;
+}
+
+#toggle-btn:checked ~ .open {
+  display: none;
+}
+
+@media screen and (min-width:767px) {
+  nav {flex-direction: row;}
+  nav a:not(:first-child) {display: inline; padding: 14px 16px;}    
+  nav .icon, #toggle-btn:checked ~ .close {display: none;}
+}

@@ -1,0 +1,60 @@
+.brand-logo {
+    max-width: 50px;
+    padding: 0;
+    margin: 0 10px;
+  }
+  
+  .brand-logo img {
+    max-height: 43px;
+    object-fit: contain;
+  }
+  
+  nav {
+    overflow: hidden;
+    background-color: #333;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  nav a:not(:first-child) {display: none;}
+
+  nav a.icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+  nav.responsive .icon {
+      background-color: #ddd;
+    }
+
+  nav.responsive a {
+      display: block;
+      text-align: left;
+    }
+  
+  @media screen and (min-width:767px) {
+  nav {flex-direction: row;}
+  nav a:not(:first-child) {display: block;}    
+  nav a.icon {display: none;}
+  }
+  

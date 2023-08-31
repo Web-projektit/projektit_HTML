@@ -1,18 +1,12 @@
- /* Container for the gallery */
  .gallery {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around;*/
   }
 
-  /* Individual image containers, optimized for mobile */
-  .gallery-item {
-    /* flex: 1; */
+ .gallery-item {
     flex: 0 0;
     min-width: 100%;
     /* gap: 10px; */
-    /* margin: 10px; */
-    box-sizing: border-box;
     text-align: center;
   }
 
@@ -24,25 +18,17 @@
 
   /* Media queries for larger screens using Bootstrap breakpoints */
   @media (min-width: 576px) {
-    .gallery-item {
-      min-width: 50%;
-    }
+    .gallery-item {min-width: 50%;}
   }
 
   @media (min-width: 768px) {
-    .gallery-item {
-      min-width: 33.333%;
-    }
+    .gallery-item {min-width: 33.333%;}
   }
 
   @media (min-width: 992px) {
-    .gallery-item {
-      min-width: 25%;
-    }
+    .gallery-item {min-width: 25%;}
   }
 
   @media (min-width: 1200px) {
-    .gallery-item {
-      min-width:20%;
-    }
+    .gallery-item {min-width:20%;}
   }

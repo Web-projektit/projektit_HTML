@@ -1,30 +1,27 @@
+/* Esimerkki virheilmoituksen näyttämisestä */
 const menutoggle = () => {
-
-  try {
+try {
     console.log("menutoggle");
     //alert("menutoggle");
     let x = document.querySelector("nav");
     x.className = x.className === "" ? "responsive" : "";
-    throw new Error("Jokin meni pieleen!");
-  } catch (error) {
+    throw new Error("menutoggle toimii.");
+    } 
+  catch (error) {
     console.error("Virhe,menutoggle:", error.message);
     let x = document.querySelector("#ilmoitukset");
     let p = document.querySelector("#ilmoitukset p");
     x.classList.remove("alert-success", "d-none");
     x.classList.add("alert-danger");
     p.innerHTML = error.message;
-  }
+    }
 };
 
-/*try {
-document.querySelector("#tallenna").addEventListener("click", menutoggle)
-} catch (error) {
-console.error("Virhe,scripts:",error)
-}*/
 
 //document.querySelector("#tallenna").addEventListener("click", menutoggle)
 document.querySelector("#tallenna").onclick = menutoggle;
 
+/* Bootstrap-muotoiltujen ilmoitusten poisto */
 const ilmoitukset = document.querySelector("#ilmoitukset");
 document.querySelectorAll("input,select,textarea").forEach( el => {
   el.addEventListener("click", e => {
@@ -39,81 +36,57 @@ document.querySelector("input").onchange = () => {
     document.querySelector("#ilmoitukset").classList.add("d-none");
   }
 };
-//alert(document.querySelector("#tallenna").id)
 
+/*  Lomakkeiden validointi Bootstrap-muotoilulla */
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
   "use strict";
-
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
   const forms = document.querySelectorAll(".needs-validation");
-
   // Loop over them and prevent submission
-  Array.from(forms).forEach((form) => {
-    form.addEventListener(
-      "submit",
-      (event) => {
+  Array.from(forms).forEach(form => {
+    form.addEventListener("submit", event => {
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
-        }
-
+          }
         form.classList.add("was-validated");
-      },
-      false
-    );
-  });
+        },false);
+    });
 })();
 
-    var x = document.querySelector("nav")
-    x.className = (x.className === "") ? "responsive" : ""
-    }
 
-
-// Event listener for scrolling
+/*  Jatkuva vieritys */
 window.onscroll = () => {
-// Check if we're at the bottom
-console.log(window.innerHeight + window.scrollY)
-if (window.innerHeight + window.scrollY >= document.body.offsetHeight-1) {
-   // Change color to green
-   //document.querySelector('body').style.background = 'green';
+  console.log(window.innerHeight + window.scrollY)
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight-1) {
     load();
     } 
-//else {
-    // Change color to white
-    //document.querySelector('body').style.background = 'white';
-//}
-};
+  };
 
 
 let url = "./posts.php";
 let counter = 1;
 const quantity = 25;
+/* Ensimmäinen erä postauksia */
 document.addEventListener('DOMContentLoaded', load);
 
-// Load next set of posts
+/* Lisää postauksia */
 function load() {
-    // Set start and end post numbers, and update counter
     const start = counter;
     const end = start + quantity - 1;
     counter = end + 1;
-    // Get new posts and add posts
     fetch(`${url}?start=${start}&end=${end}`)
     .then(response => response.json())
     .then(data => {
         data.posts.forEach(add_post);
         console.log(document.body.offsetHeight);
     })
-    
 };
 
-// Add a new post with given contents to DOM
 const add_post = contents => {
-    // Create new post
     const post = document.createElement('div');
-    // post.className = 'post';
     post.innerHTML = contents;
-    // Add post to DOM
     document.querySelector('#posts').append(post);
 };
 

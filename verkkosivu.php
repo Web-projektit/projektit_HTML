@@ -45,6 +45,7 @@ include "header.php";
     </tr>
     </tbody>
 </table>
-</div>
+<!--<input id="demo" onkeyup="if (confirm('Tulostetaanko?')) muokkaus()"></input>
+</div>-->
 <?php include "footer.html"; ?>
 

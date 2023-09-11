@@ -44,7 +44,7 @@ nav .icon {
   right: 0;
   font-size: 24px; 
   cursor: pointer; 
-  padding: 10px;
+  padding: 5px 10px;
 }
   
 nav .close {
@@ -76,7 +76,7 @@ nav .close {
   display: none;
 }
 
-@media screen and (min-width:767px) {
+@media (min-width:767px) {
   nav {flex-direction: row;}
   nav a:not(:first-child) {display: inline; padding: 14px 16px;}    
   nav .icon, #toggle-btn:checked ~ .close {display: none;}

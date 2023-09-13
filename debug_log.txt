@@ -1,0 +1,8 @@
+2023-09-13 10:42:46 Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
+2023-09-13 10:54:21 Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`)):Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
+2023-09-13 10:55:23 1452:Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
+2023-09-13 10:57:03 Virhe 1452: Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
+2023-09-13 11:16:51 Virhe 1452: Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
+2023-09-13 11:26:05 Virhe 1452: Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
+2023-09-13 11:26:29 Virhe 1452: Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
+2023-09-13 14:12:43 Virhe 1452: Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))

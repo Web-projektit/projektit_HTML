@@ -19,7 +19,7 @@ try {
 
 
 //document.querySelector("#tallenna").addEventListener("click", menutoggle)
-document.querySelector("#tallenna").onclick = menutoggle;
+//document.querySelector("#tallenna").onclick = menutoggle;
 
 /* Bootstrap-muotoiltujen ilmoitusten poisto */
 const ilmoitukset = document.querySelector("#ilmoitukset");

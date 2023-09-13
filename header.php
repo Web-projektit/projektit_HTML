@@ -16,11 +16,14 @@
 <body>
 <?php 
 ini_set('default_charset', 'utf-8');
+error_reporting(E_ALL);
+include "debuggeri.php";
+register_shutdown_function('debuggeri_shutdown');
 $active = basename($_SERVER['PHP_SELF'], ".php");
 ?>
 <nav>
-<a class="brand-logo" href="profiili.php">
-<img src="omniavalkea.png" alt="Logo"></a>
+<a class="brand-logo" href="index.php">
+<img src="omniamusta_tausta.png" alt="Logo"></a>
 <input type="checkbox" id="toggle-btn">
 <label for="toggle-btn" class="icon open"><i class="fa fa-bars"></i></label>
 <label for="toggle-btn" class="icon close"><i class="fa fa-times"></i></label>
@@ -29,5 +32,8 @@ $active = basename($_SERVER['PHP_SELF'], ".php");
 <a class="<?= ($active == 'rekisteroitymislomake') ? 'active':''; ?>" href="rekisteroitymislomake.php">Rekisteröityminen</a>
 <a class="<?= ($active == 'verkkosivu') ? 'active':''; ?>" href="verkkosivu.php">Verkkosivu</a>
 <a class="<?= ($active == 'vieritys') ? 'active':''; ?>" href="vieritys.php">Vieritys</a>
-
+<a class="<?= ($active == 'PHP-tehtavia') ? 'active':''; ?>" href="PHP-tehtavia.php">PHP-tehtavat</a>
+<a class="<?= ($active == 'autot') ? 'active':''; ?>" href="autot.php">Autot</a>
+<a class="<?= ($active == 'sakila') ? 'active':''; ?>" href="sakila.php">Sakila</a>
+<a class="<?= ($active == 'phpinfo') ? 'active':''; ?>" href="phpinfo.php">phpinfo</a>
 </nav>

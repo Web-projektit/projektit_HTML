@@ -16,8 +16,8 @@ if (isset($_GET['button'])) {
         } 
     else {
         echo "Ei tuloksia";
-        }
-    }*/
+        }*/
+    }
 ?>
 <div class="container"> 
 <fieldset>

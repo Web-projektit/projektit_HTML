@@ -1,0 +1,30 @@
+Lomakkeet
+
+- Muotoilu
+- Validointisäännöt
+  pakolliset kentät: required
+  numerokentät: min, max
+  tekstikentät: maxlength, minlength
+
+- Validoinnin virheilmoitukset
+- Arvojen muistaminen
+
+Vaihtoisesti
+
+-  Bootstrap-muotoilu ja validoinnin virheilmoitukset
+
+
+Lomakekäsittely
+- pakolliset kentät: ei tyhjä
+- numerokentät: is_int, 1 * , min, max
+- tekstikentät: preg_match, max, min
+- suodatukset: strip_tags, mysql_escape_string
+- virheilmoitukset lomakkeelle validointivirheilmoitusten tavoin
+- ei samoja tietoja uudestaan, esim. samaa elokuvaa
+
+
+
+
+
+Tuloslistauksen sivutus tai jatkuva vieritys
+

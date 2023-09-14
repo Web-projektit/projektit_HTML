@@ -1,0 +1,1 @@
+SELECT title,name FROM film f LEFT JOIN (SELECT film_id,name FROM film_category fc INNER JOIN category c ON fc.category_id = c.category_id WHERE c.name LIKE 'a%') n ON f.film_id = n.film_id ORDER BY title;

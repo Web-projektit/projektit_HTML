@@ -6,3 +6,99 @@
 2023-09-13 11:26:05 Virhe 1452: Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
 2023-09-13 11:26:29 Virhe 1452: Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
 2023-09-13 14:12:43 Virhe 1452: Cannot add or update a child row: a foreign key constraint fails (`autokanta`.`auto`, CONSTRAINT `auto_ibfk_1` FOREIGN KEY (`omistaja`) REFERENCES `henkilo` (`hetu`))
+2023-09-14 10:36:55 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 10:38:35 lkm:0
+2023-09-14 10:38:35 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 10:39:51 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'Sakila%',lkm:0
+2023-09-14 10:39:51 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 10:40:40 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'Sakila%',lkm:0
+2023-09-14 10:40:40 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 10:48:35 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 10:48:35 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 11:01:16 hakuparametrit: &button=haku
+2023-09-14 11:01:16 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:01:16 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 11:24:00 hakuparametrit: 
+2023-09-14 11:24:00 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:24:00 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 11:31:43 hakuparametrit: title=a&button=haku
+2023-09-14 11:31:43 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:31:43 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 11:32:09 hakuparametrit: title=a&button=haku
+2023-09-14 11:32:09 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:32:09 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:32:19 hakuparametrit: title=a&button=haku
+2023-09-14 11:32:19 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:32:19 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 50, 25
+2023-09-14 11:38:04 hakuparametrit: title=a&button=haku
+2023-09-14 11:38:04 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:38:04 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:39:29 hakuparametrit: title=a&button=haku
+2023-09-14 11:39:29 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:39:29 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:40:22 hakuparametrit: title=a&button=haku
+2023-09-14 11:40:22 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:40:22 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:43:40 hakuparametrit: title=a&button=haku
+2023-09-14 11:43:40 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:43:40 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:48:22 hakuparametrit: title=a&button=haku
+2023-09-14 11:48:22 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:48:22 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:48:34 hakuparametrit: title=a&button=haku
+2023-09-14 11:48:34 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:48:34 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:51:50 hakuparametrit: title=a&button=haku
+2023-09-14 11:51:50 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:51:50 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:51:56 hakuparametrit: title=a&button=haku
+2023-09-14 11:51:56 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:51:56 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 11:53:05 hakuparametrit: title=a&button=haku
+2023-09-14 11:53:05 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:53:05 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 11:53:20 hakuparametrit: title=a&button=haku
+2023-09-14 11:53:20 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:53:20 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:53:28 hakuparametrit: title=a&button=haku
+2023-09-14 11:53:28 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:53:28 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:53:40 hakuparametrit: title=a&button=haku
+2023-09-14 11:53:40 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:53:40 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:53:50 hakuparametrit: title=a&button=haku
+2023-09-14 11:53:50 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:53:50 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 11:53:56 hakuparametrit: title=a&button=haku
+2023-09-14 11:53:56 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:53:56 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:54:09 hakuparametrit: title=a&button=haku
+2023-09-14 11:54:09 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:54:09 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 0, 25
+2023-09-14 11:54:20 hakuparametrit: title=a&button=haku
+2023-09-14 11:54:20 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:54:20 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:55:42 hakuparametrit: title=a&button=haku
+2023-09-14 11:55:42 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:55:42 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:59:04 hakuparametrit: title=a&button=haku
+2023-09-14 11:59:04 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:59:04 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:59:32 hakuparametrit: title=a&button=haku
+2023-09-14 11:59:32 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'a%',lkm:46
+2023-09-14 11:59:32 SELECT * FROM film WHERE title LIKE 'a%' LIMIT 25, 25
+2023-09-14 11:59:39 hakuparametrit: title=an&button=haku
+2023-09-14 11:59:39 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'an%',lkm:8
+2023-09-14 11:59:39 SELECT * FROM film WHERE title LIKE 'an%' LIMIT 0, 25
+2023-09-14 13:25:01 hakuparametrit: title=an&button=haku
+2023-09-14 13:25:01 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'an%',lkm:8
+2023-09-14 13:25:01 SELECT * FROM film WHERE title LIKE 'an%' LIMIT 0, 25
+2023-09-14 13:25:04 hakuparametrit: title=an&button=haku
+2023-09-14 13:25:04 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'an%',lkm:8
+2023-09-14 13:25:04 SELECT * FROM film WHERE title LIKE 'an%' LIMIT 0, 25
+2023-09-14 13:25:08 hakuparametrit: title=an&button=haku
+2023-09-14 13:25:08 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'an%',lkm:8
+2023-09-14 13:25:08 SELECT * FROM film WHERE title LIKE 'an%' LIMIT 0, 25
+2023-09-14 13:25:12 hakuparametrit: title=an&button=haku
+2023-09-14 13:25:12 SELECT COUNT(*) AS rivit FROM film WHERE title LIKE 'an%',lkm:8
+2023-09-14 13:25:12 SELECT * FROM film WHERE title LIKE 'an%' LIMIT 0, 25
